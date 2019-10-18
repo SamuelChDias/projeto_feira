@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>HAS - Notícias de eSport na hora!</title>
+		<link rel="icon" href="_img/Icones/ico.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="_css/Style.css">
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="_js/funcoes.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<a href="index.html"><img src="_img/Logo/logo_cor.png" class="logo"></a>
+			<img src="_img/Banner-rodpé/Banner001.png" class="header_img">
+			<div id="signin"><a href="cadastro.html"><p class="cad">Cadastre-se</p></a></div>
+		</div>
+
+		<div id="news">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="_img/csgo_1.jpg" alt=""style="width:100%">
+					<div class="text">CS GO</div>
+				</div>
+						
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="_img/f_2.jpg" style="width:100%">
+					<div class="text">Fortnite</div>
+				</div>
+						
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="_img/lol_1.jpg" style="width:100%">
+					<div class="text">LOL</div>
+				</div>
+						
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				</div>
+				<br>
+						
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				
+				<br>
+				<a class="mais_n" href="notícias.html"><strong>Todas as notícias</strong></a>
+			</div>
+
+		<div id="content">
+
+			<!--Explicando o que é eSports-->
+			<h1>O que é eSports?</h1>
+
+			<p>O eSports, ou esporte eletrônico, veio para ficar. A modalidade de competição profissional com video games não é muito nova, mas cresce a cada ano, sempre na cola de jogos de sucesso, como League of Legends, DOTA 2, Counter Strike, Starcraft e outros.</p>
+
+			<p>As origens do esporte eletrônico estão, provavelmente, na Coréia do Sul e em alguns pontos da Ásia e Europa. Os jogos do gênero de estratégia em tempo real cresceram nesses locais, além de levarem ainda popularidade aos jogadores profissionais que surgiram na onda. Na Coréia do Sul, por exemplo, o eSport é uma modalidade competitividade reconhecida oficialmente desde o ano 2000.</p>
+
+			<p>Hoje, além da Ásia, outros grandes territórios do eSport são America do Norte e o restante da Europa que ainda não tinha sido "febre" nos primeiros momentos, há até mesmo jogadores que conseguem visto de viagem para modalidades esportivas, o que mostra a evolução das competições. Os maiores torneios possuem transmissão ao vivo via Internet, etapas presrnciais com milhares de pessoas na plateia e até mesmo narradores oficiais.</p>
+
+			<h1>Os Jogadores Profissionais</h1>
+
+			<p>Como todo esporte tradicional, os esportes eletrônicos também possuem times e jogadores oficiais, é normal que seja uma equipe de eSport seja patrocinada por uma grande marca relacionada com games, por exemplo. Além de existirem jogadores que possuem suas próprias marcas, fama e, claro, uma legião de fãs.</p>
+		
+	
+	
+			<!-- Botão para acionar modal -->
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#ExemploModalCentralizado">
+			  Calcule seu KDA!
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" 			aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+			  		<div class="modal-content">
+		    			<div class="modal-header">
+		    		    	<h5 class="modal-title" id="TituloModalCentralizado">CALCULO</h5>
+		    		    	<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+		    		     		<span aria-hidden="true">&times;</span>
+		    		    	</button>
+						</div>
+		    			<div class="modal-body">
+							<form>
+								Insira a quantidade de kills(vezes que você matou alguém):
+								<br>
+								<input type="number" name="receberKill">
+								<br>
+								<br>
+								Insira a quantidade de Deaths (vezes que você morreu):
+								<br>
+								<input type="number" name="receberDeaths">
+								<br>
+								<br>
+								Insira a quantidade de Assists(assistencias em kills de outras pessoas):
+								<br>
+								<input type="number" name="receberAssists">
+								<br>
+								<br>
+								<input type="button" class="btn btn-info" value="Calcular" onclick="receberValore				(receberKill.value,receberDeaths.value,receberAssists.value)">
+								<input id="txtResultado" type="number" name="resultadoKDA" disabled="disabled">
+							</form>
+			    		</div>
+			    		<div class="modal-footer">
+			    			<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+			    			<button type="button" class="btn btn-info">Salvar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+			<img class="foot" src="_img/Banner-rodpé/Rodape001.png">
+		</div>
+	</body>
+</html>
